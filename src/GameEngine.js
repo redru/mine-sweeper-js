@@ -3,7 +3,7 @@ export let ctx = null;
 export let configuration = null;
 
 export const initializeGame = (params) => {
-    configuration = params.configuration;
+    configuration = params;
     createCanvasAndContext();
 }
 

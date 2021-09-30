@@ -2,11 +2,9 @@ import {initializeGame} from './GameEngine';
 import Square from './models/Square';
 
 initializeGame({
-    configuration: {
-        screen: { width: 300, height: 300 },
-        gameplay: {
-            mines: 90,
-        }
+    screen: { width: 300, height: 300 },
+    gameplay: {
+        mines: 90,
     }
 });
 
