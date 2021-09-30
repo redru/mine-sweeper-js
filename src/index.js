@@ -1,4 +1,4 @@
-import { initializeGame } from './GameEngine';
+import {initializeGame} from './GameEngine';
 import Square from './models/Square';
 
 initializeGame({
@@ -10,5 +10,8 @@ initializeGame({
     }
 });
 
-const square = Square({ width: 100, height: 100 });
+const square = Square({ x: 0, y: 0, width: 100, height: 100 });
 square.draw();
+
+const square2 = Square({ x: 0, y: 110, width: 100, height: 100 });
+square2.draw();

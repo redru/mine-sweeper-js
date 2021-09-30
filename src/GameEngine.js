@@ -9,9 +9,10 @@ export const initializeGame = (params) => {
 
 const createCanvasAndContext = () => {
     canvas = document.createElement('canvas');
+    ctx = canvas.getContext('2d');
+
     canvas.id = 'mine-sweeper-canvas';
     canvas.width = configuration.screen.width;
     canvas.height = configuration.screen.height;
     document.body.append(canvas);
-    ctx = canvas.getContext('2d');
 }

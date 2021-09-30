@@ -1,9 +1,9 @@
 import { ctx } from '../GameEngine';
 
-const Square = ({ width, height }) => {
+const Square = ({ x, y, width, height }) => {
 
     const draw = () => {
-        ctx.fillRect(25, 25, width, height);
+        ctx.fillRect(x, y, width, height);
     }
 
     return {
